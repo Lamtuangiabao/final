@@ -12,7 +12,7 @@ signin_form.addEventListener("submit", (e) => {
       if (phone == user.phone) {
         notif("Đăng nhập thành công", true);
         setTimeout(() => {
-          location = "./final.html";
+          location = "./index.html";
         }, 2500);
         return;
       } else {

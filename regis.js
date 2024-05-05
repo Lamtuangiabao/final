@@ -31,6 +31,6 @@ regist_form.addEventListener("submit", (e) => {
   }
   notif("Đăng ký thành công", true);
   setTimeout(() => {
-    location = "./final.html";
+    location = "./index.html";
   }, 2500);
 });
