@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+    <link rel="stylesheet" href="./final.css" />
+  </head>
+  <body>
+    <!-- thẻ search logo -->
+    <div id="navbar">
+      <div id="logotext">
+        <a href="#">
+          <img
+            style="width: 100%; height: 70%"
+            data-v-2c7b9a87=""
+            src="data:image/png;base64,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"
+            alt="Logo go2joy"
+        /></a>
+      </div>
+      <!-- thẻ ưu đãi -->
+      <div id="promo">
+        <div>
+          <svg
+            style="width: 25%; padding-top: 5%"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z"
+            />
+          </svg>
+        </div>
+        <div class="fontpromo"><a href="./promo.html">Ưu đãi</a></div>
+      </div>
+      <!-- thẻ danh sách -->
+      <div id="list" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Danh sách khách sạn
+        <div id="listdrop">
+          <div><a href="">Tình Yêu</a></div>
+          <div><a href="">Du Lịch</a></div>
+          <div><a href="">Sang Trọng</a></div>
+          <div><a href="">Khách sạn mới</a></div>
+          <div><a href="">Go2joy roomjoy</a></div>
+        </div>
+      </div>
+      <!-- thẻ searcher -->
+      <div id="searcher">
+        <div id="searchericon">
+          <div>
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                font-size: small;
+                margin-top: 3%;
+              "
+            >
+              <svg
+                style="width: 10%; margin-left: 40%"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H360c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V67c0 40.3-16 79-44.5 107.5L225.9 256l81.5 81.5C336 366 352 404.7 352 445v19h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24h8V445c0-40.3 16-79 44.5-107.5L158.1 256 76.5 174.5C48 146 32 107.3 32 67V48H24C10.7 48 0 37.3 0 24zM110.5 371.5c-3.9 3.9-7.5 8.1-10.7 12.5H284.2c-3.2-4.4-6.8-8.6-10.7-12.5L192 289.9l-81.5 81.5zM284.2 128C297 110.4 304 89 304 67V48H80V67c0 22.1 7 43.4 19.8 61H284.2z"
+                />
+              </svg>
+            </div>
+            <div class="font" style="font-size: small">
+              <button>Theo giờ</button>
+            </div>
+          </div>
+          <div>
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                font-size: small;
+                margin-top: 3%;
+              "
+            >
+              <svg
+                style="width: 10%; margin-left: 40%"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                />
+              </svg>
+            </div>
+            <div class="font" style="font-size: small">
+              <button>Qua đêm</button>
+            </div>
+          </div>
+          <div>
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                font-size: small;
+                margin-top: 3%;
+              "
+            >
+              <svg
+                style="width: 10%; margin-left: 40%"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z"
+                />
+              </svg>
+            </div>
+            <div class="font" style="font-size: small">
+              <button>Theo ngày</button>
+            </div>
+          </div>
+        </div>
+        <div id="form-search">
+          <div style="width: 3%; margin-top: 3%; margin-left: 2%">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+          </div>
+          <form style="display: flex; width: 98%">
+            <div id="searcherbar">
+              <label for="" style="font-size: small; padding-top: 0"
+                >Địa Điểm</label
+              ><input
+                type="text"
+                style="height: 100%; width: 100%"
+                placeholder="Bạn muốn đi đâu"
+              />
+            </div>
+
+            <div id="searchbutton">
+              <button type="submit" style="height: 100%; width: 90%">
+                <svg
+                  style="width: 20%; margin-top: 2%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  !Font Awesome Free 6.5.2 by @fontawesome -
+                  https://fontawesome.com License -
+                  https://fontawesome.com/license/free Copyright 2024 Fonticons,
+                  Inc.
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- thẻ button -->
+      <div id="ba"><a href="./signin.html">Đăng nhập</a></div>
+      <div id="ba"><a href="./regis.html">Đăng ký</a></div>
+    </div>
+    <!-- thẻ chính -->
+    <div id="main">
+      <!-- thẻ header -->
+      <div id="header">
+        <img
+          src="https://s3.go2joy.vn/1000w/cover_photo/171_1698827234_65420be28e700.webp"
+          alt="go2joy-banner"
+        />
+      </div>
+      <!-- thẻ header 2 -->
+      <div id="header2">
+        <div class="col2 im">
+          <img style="width:100%;height: 100%;" src="https://s3.go2joy.vn/350w/banner/8707_1712558594_66139202a9da8.jpg" alt="image-category" loading="lazy" data-nuxt-img="" sizes="(max-width: 740px) 350px, 350px" srcset="https://s3.go2joy.vn/350w/banner/8707_1712558594_66139202a9da8.jpg 350w, https://s3.go2joy.vn/350w/banner/8707_1712558594_66139202a9da8.jpg 350w" class="swiper-lazy w-full object-cover h-full">
+        </div>
+        <div class="col2 im">
+          <img style="width:100%;height: 100%" src="https://s3.go2joy.vn/350w/banner/8707_1713233446_661dde261c2c4.webp" alt="image-category" loading="lazy" data-nuxt-img="" sizes="(max-width: 740px) 350px, 350px" srcset="https://s3.go2joy.vn/350w/banner/8707_1713233446_661dde261c2c4.webp 350w, https://s3.go2joy.vn/350w/banner/8707_1713233446_661dde261c2c4.webp 350w" class="swiper-lazy w-full object-cover h-full">
+        </div>
+        <div class="col2 im">
+          <img style="width: 100%;height: 100%" src="https://s3.go2joy.vn/350w/banner/8707_1711938584_660a1c18a7568.webp" alt="image-category" loading="lazy" data-nuxt-img="" sizes="(max-width: 740px) 350px, 350px" srcset="https://s3.go2joy.vn/350w/banner/8707_1711938584_660a1c18a7568.webp 350w, https://s3.go2joy.vn/350w/banner/8707_1711938584_660a1c18a7568.webp 350w" class="swiper-lazy w-full object-cover h-full">
+        </div>
+      </div>
+      <!-- thẻ header 3 -->
+      <div id="header3" >
+        <div >
+          <img
+            style="width: 100%;height: 100%;"
+            src="https://s3.go2joy.vn/350w/banner/8707_1713152285_661ca11d179cd.webp"
+            alt="image-category"
+          
+          />
+        </div>
+        <div  class="col3">
+          <h1 style="color:antiquewhite;font-size:larger;padding-top:5%">Đăng ký tài khoản và nhận các quyền lợi</h1>
+          <p>Nhận và sử dụng ưu đãi từ Go2Joy và đối tác</p>
+          <p>
+            Tích Joy Xu và tham gia chương trình tem tại khách sạn để đổi những
+            ưu đãi hấp dẫn</p
+          >
+          <p>Nhận ngay coupon giảm giá 55% với người dùng mới</p>
+        </div>
+        <div >
+          <div class="buttonshape">
+            <a href="./regis.html">Đăng ký và nhận ưu đãi</a>
+          </div>
+        </div>
+      </div>
+      <!-- thẻ header 4 -->
+      <div id="header4">
+        <div  
+        style="
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-left: 1%;
+          font-size: larger;
+           /* height: 50%; */
+        "> 
+         
+          
+            Danh mục khách sạn
+          
+        </div>
+        <div id="body4">
+          <div class="col4a">
+            <div class="col4">
+              <a href="#"><img
+                style="width: 100%; height: 100%"
+                src="https://s3.go2joy.vn/350w/hotel/171_1656576032_62bd58206464a.png"
+                alt="image-category"
+                loading="lazy"
+                data-nuxt-img=""
+                sizes="(max-width: 740px) 350px, 350px"
+                srcset="
+                  https://s3.go2joy.vn/350w/hotel/171_1656576032_62bd58206464a.png 350w,
+                  https://s3.go2joy.vn/350w/hotel/171_1656576032_62bd58206464a.png 350w
+                "
+                class="swiper-lazy w-full object-cover h-full"
+              /></a>
+            </div>
+            <div class="col4">
+              <h1 >Go2Joy Room</h1>
+              <p >Những căn phòng đặc biệt nhất dành cho Joyer</p></div>
+          </div>
+          <div class="col4a">
+            <div class="col4">
+              <a href="#"> <img
+                style="width: 100%; height: 100%"
+                src="https://s3.go2joy.vn/350w/hotel/171_1656643484_62be5f9ccbb00.png"
+                alt="image-category"
+                loading="lazy"
+                data-nuxt-img=""
+                sizes="(max-width: 740px) 350px, 350px"
+                srcset="
+                  https://s3.go2joy.vn/350w/hotel/171_1656643484_62be5f9ccbb00.png 350w,
+                  https://s3.go2joy.vn/350w/hotel/171_1656643484_62be5f9ccbb00.png 350w
+                "
+                class="swiper-lazy w-full object-cover h-full"
+              /></a>
+            </div>
+            <div class="col4">
+              <h1 >Tình yêu</h1>
+              <p >Hơn 300 khách sạn kèm nhiều ưu đãi cho các cặp đôi</p>
+            </div>
+          </div>
+          <div class="col4a">
+            <div class="col4">
+              <a href="#"><img
+                style="width: 100%; height: 100%"
+                src="https://s3.go2joy.vn/350w/hotel/171_1656643418_62be5f5a11b38.png"
+                alt="image-category"
+                loading="lazy"
+                data-nuxt-img=""
+                sizes="(max-width: 740px) 350px, 350px"
+                srcset="
+                  https://s3.go2joy.vn/350w/hotel/171_1656643418_62be5f5a11b38.png 350w,
+                  https://s3.go2joy.vn/350w/hotel/171_1656643418_62be5f5a11b38.png 350w
+                "
+                class="swiper-lazy w-full object-cover h-full"
+              /></a>
+            </div>
+            <div class="col4">
+              <h1 class="text-title-large !leading-29 font-semibold truncate">Du lịch</h1>
+              <p class="text-body-medium break-keep category--limit-text">Khám phá những vùng đất mới, tận hưởng với từng chuyến đi</p>
+            </div>
+          </div>
+          <div class="col4a">
+            <div class="col4">
+              <a href="#"><img
+                style="width: 100%; height: 100%"
+                src="https://s3.go2joy.vn/350w/hotel/33_1689058163_64acfb73489cd.webp"
+                alt="image-category"
+                loading="lazy"
+                data-nuxt-img=""
+                sizes="(max-width: 740px) 350px, 350px"
+                srcset="
+                  https://s3.go2joy.vn/350w/hotel/33_1689058163_64acfb73489cd.webp 350w,
+                  https://s3.go2joy.vn/350w/hotel/33_1689058163_64acfb73489cd.webp 350w
+                "
+                class="swiper-lazy w-full object-cover h-full"
+              /></a>
+            </div>
+            <div class="col4">
+              <h1 class="text-title-large !leading-29 font-semibold truncate">Sang trọng</h1>
+              <p class="text-body-medium break-keep category--limit-text">Trải nghiệm không gian đẳng cấp tại khách sạn 4* - 5*</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- THẺ HEADER 5 -->
+      <div id="header5">
+        <div>
+          <p
+            style="
+              padding-left: 7%;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              font-size: larger;
+            "
+          >
+            Trải nghiệm cùng Go2joy
+          </p>
+        </div>
+        <div id="body5">
+          <div class="col51" >
+            <h2 style="color: antiquewhite;font-size: xx-large;" class="text-white text-h2 font-semibold 768:mb-20 mb-16 !leading-40">Khám phá khách sạn mới</h2>
+            <div><a style=" color: black;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" href="">Xem thêm</a></div>
+        </div>
+        <div class="col52">
+          <h2 style="color: antiquewhite;font-size: xx-large;" class="text-white text-h2 font-semibold 768:mb-20 mb-16 !leading-40">Giá sốc ⚡️ Đêm nay</h2>
+          <div><a style=" color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" href="">Xem thêm</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- thẻ header 6 -->
+    <div id="header6">
+      <div class="col">
+        <h2 class="col611">Những điều thú vị có thể</h2>
+        <h2 class="col612">bạn chưa biết</h2>
+      </div>
+      <div class="col">
+        <div class="col62">
+          <a href="#" style="color: black;"><p class="col622">Danh sách bài blog</p></a>
+        </div>
+      </div>
+    </div>
+    <!-- thẻ header 7 footer-->
+    <div id="footer">
+      <div class="col71">
+        <div class="col7">
+          <ul>
+            <li><h1>Hỗ trợ</h1></li>
+            <li><a href="">Hotline</a></li>
+            <li><a href="">Liên hệ hợp tác</a></li>
+            <li><a href="">Cơ chế giải quyết </a></li>
+          </ul>
+        </div>
+        <div class="col7">
+          <ul>
+            <li><h1>Giới thiệu</h1></li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li><a href="">Trang blog</a></li>
+            <li><a href="">Quy chế hoạt đọng website</a></li>
+            <li><a href="">Cơ hội nghề nghiệp</a></li>
+            <li><a href="">Dành cho đối tác</a></li>
+          </ul>
+        </div>
+        <div class="col7">
+          <ul>
+            <li><h1>Đối tác thanh toán</h1></li>
+              <li style="float:left;margin-left: 1px;"><img style="width: 20px;" src="data:image/png;base64,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" alt="hình" /></li>
+            <li><img style="float:left;width: 20px;margin-left: 4px;" src="data:image/png;base64,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" alt="hình" /></li>
+          <li><img style="float:left;width: 20px;margin-left: 4px;" src="data:image/png;base64,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" alt=""></li>
+          <li><img style="float:left;margin-left: 3px;width: 20px" src="data:image/png;base64,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" alt=""></li>
+        
+         
+          </ul>
+        </div>
+        <div class="col7">
+          <ul>
+            <li><h1>Tải ứng dụng</h1></li>
+            <li><a href="">
+              <svg style="width: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+            </a>
+            <p style="display:inline;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Google play</p>
+          </li>
+            <li><a href=""><svg style="width: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z"/></svg></a>
+              <p style="display:inline;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Appstore</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col72">
+        <div class="col721">
+          <span
+            ><p style="float: left">
+              Copyright © 2023 GO2JOY Vietnam, Jsc.
+            </p></span
+          >
+          <a href="">Điều khoản</a>
+          <a href="">Bảo mật</a>
+          <a href="" style="float: left">Quy định đăng tin</a>
+          <span>Sơ đồ trang web</span>
+        </div>
+
+        <div class="col73">
+          <div class="col733">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 510"
+                style="width: 10px">
+              
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+          </svg>
+            </a>
+            <a href=""
+              ><svg style="width: 15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href=""
+              ><svg style="width: 15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
+            <a href=""
+              ><svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+          </div>
+            <div class="731">
+          <div class="col731a">DMCA</div>
+          <div><p class="col731b">PROTECTED</p></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="final.js"></script>
+  </body>
+</html>

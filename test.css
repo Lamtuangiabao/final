@@ -1,0 +1,40 @@
+.dropdown {
+  position: relative;
+  /* border: 1px solid saddlebrown; */
+  border: 5px solid red;
+  background-color: aqua;
+  /* //abssolute hay relative cũng như nhau  miễn là 2 cái absolutr và relative */
+  /* margin-top: 300%; */
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* //abssolute hay relative cũng như nhau miễn là 2 cái absolutr và relative */
+  border: 5px solid green;
+  background-color: blueviolet;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  /* padding: 12px 16px; */
+  /* z-index: 1; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+}
+/* ///////////////////*/
+/* #absolutely-positioned { */
+/* position: absolute;
+  top: 50px; */
+/* /* left: 100px; */
+/* width: 150px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 10px;
+  z-index: 1;
+} */
+
+/* link js về button dropdown */
+/* https://www.w3schools.com/howto/howto_js_dropdown.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. */
